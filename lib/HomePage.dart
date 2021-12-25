@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -12,7 +13,7 @@ class HomePage extends StatelessWidget {
           children: [
             Image.asset("assets/images/UML_main.png"),
 
-            SizedBox(height: 65),
+            const SizedBox(height: 65),
 
             Padding(
               padding: const EdgeInsets.fromLTRB(60, 0, 0, 0),
@@ -142,7 +143,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.fromLTRB(80, 0, 0, 0),
               child: GestureDetector(

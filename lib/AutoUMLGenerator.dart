@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Auto_UML_Generator extends StatelessWidget {
-  const Auto_UML_Generator({ Key? key }) : super(key: key);
+class AutoUMLGenerator extends StatelessWidget {
+  const AutoUMLGenerator({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,6 @@ class Auto_UML_Generator extends StatelessWidget {
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-
             Padding(
               padding: const EdgeInsets.fromLTRB(125, 0, 0, 0),
               child: GestureDetector(
@@ -36,96 +35,84 @@ class Auto_UML_Generator extends StatelessWidget {
             const SizedBox(height: 100),
 
             Padding(
-              padding: const EdgeInsets.fromLTRB(95, 0, 0, 0),
+              padding: const EdgeInsets.fromLTRB(107, 0, 0, 0),
               child: GestureDetector(
                 onTap: null,
                 child: Container(
-                  width: MediaQuery.of(context).size.width*0.48,
-                  height: MediaQuery.of(context).size.width*0.11,
                   decoration: const BoxDecoration(
                       color: Color.fromARGB(255,137,72,58),
-                      borderRadius: BorderRadius.all(Radius.circular(17))
+                      borderRadius: BorderRadius.all(Radius.circular(20))
                   ),
-                  child: const Center(child: Text('Select Type',
-                    style: TextStyle(
-                      fontSize: 25,
-                      fontFamily: 'Prociono',
-                      fontWeight: FontWeight. bold,
-                      color: Color.fromARGB(255,69,8,8),
-                    ),)),
-                ),
+                  child: FlatButton(
+                    child: const Text('Select Type', style: TextStyle(
+                        fontSize: 25,
+                        fontFamily: 'Prociono',
+                        fontWeight: FontWeight. bold,
+                        color: Color.fromARGB(255,69,8,8),)),
+                    onPressed: (){ Navigator.pushNamed(context, "/ChangeType");},), ),
               ),
             ),
             const SizedBox(height: 34),
             Padding(
-              padding: const EdgeInsets.fromLTRB(95, 0, 0, 0),
+              padding: const EdgeInsets.fromLTRB(104, 0, 0, 0),
               child: GestureDetector(
                 onTap: null,
                 child: Container(
-                  width: MediaQuery.of(context).size.width*0.48,
-                  height: MediaQuery.of(context).size.width*0.11,
                   decoration: const BoxDecoration(
                       color: Color.fromARGB(255,137,72,58),
-                      borderRadius: BorderRadius.all(Radius.circular(17))
+                      borderRadius: BorderRadius.all(Radius.circular(20))
                   ),
-                  child: const Center(child: Text('Change Type',
-                    style: TextStyle(
+                  child: FlatButton(
+                    child: const Text('Change Type', style: TextStyle(
                       fontSize: 25,
                       fontFamily: 'Prociono',
                       fontWeight: FontWeight. bold,
-                      color: Color.fromARGB(255,69,8,8),
-                    ),)),
-                ),
+                      color: Color.fromARGB(255,69,8,8),)),
+                    onPressed: (){ Navigator.pushNamed(context, "/ChangeType");},), ),
               ),
             ),
             const SizedBox(height: 34),
 
             Padding(
-              padding: const EdgeInsets.fromLTRB(55, 0, 0, 0),
+              padding: const EdgeInsets.fromLTRB(80, 0, 0, 0),
               child: GestureDetector(
                 onTap: null,
                 child: Container(
-                  width: MediaQuery.of(context).size.width*0.70,
-                  height: MediaQuery.of(context).size.width*0.11,
                   decoration: const BoxDecoration(
                       color: Color.fromARGB(255,137,72,58),
-                      borderRadius: BorderRadius.all(Radius.circular(17))
+                      borderRadius: BorderRadius.all(Radius.circular(20))
                   ),
-                  child: const Center(child: Text('Add Requirements',
-                    style: TextStyle(
+                  child: FlatButton(
+                    child: const Text('Add Requirements', style: TextStyle(
                       fontSize: 25,
                       fontFamily: 'Prociono',
                       fontWeight: FontWeight. bold,
-                      color: Color.fromARGB(255,69,8,8),
-                    ),)),
-                ),
+                      color: Color.fromARGB(255,69,8,8),)),
+                    onPressed: (){ Navigator.pushNamed(context, "/AddRequirements");},), ),
               ),
             ),
             const SizedBox(height: 34),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(55, 0, 0, 0),
-              child: GestureDetector(
-                onTap: null,
-                child: Container(
-                  width: MediaQuery.of(context).size.width*0.70,
-                  height: MediaQuery.of(context).size.width*0.11,
-                  decoration: const BoxDecoration(
-                      color: Color.fromARGB(255,137,72,58),
-                      borderRadius: BorderRadius.all(Radius.circular(17))
-                  ),
-                  child: const Center(child: Text('Change Requirements',
-                    style: TextStyle(
-                      fontSize: 25,
-                      fontFamily: 'Prociono',
-                      fontWeight: FontWeight. bold,
-                      color: Color.fromARGB(255,69,8,8),
-                    ),)),
-                ),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(60, 0, 0, 0),
+          child: GestureDetector(
+            onTap: null,
+            child: Container(
+              decoration: const BoxDecoration(
+                  color: Color.fromARGB(255,137,72,58),
+                  borderRadius: BorderRadius.all(Radius.circular(20))
               ),
-            ),
+              child: FlatButton(
+                child: const Text('Change Requirements', style: TextStyle(
+                  fontSize: 25,
+                  fontFamily: 'Prociono',
+                  fontWeight: FontWeight. bold,
+                  color: Color.fromARGB(255,69,8,8),)),
+                onPressed: (){ Navigator.pushNamed(context, "/AddRequirements");},), ),
+          ),
+        ),
             const SizedBox(height: 34),
             Padding(
-              padding: const EdgeInsets.fromLTRB(55, 0, 0, 0),
+              padding: const EdgeInsets.fromLTRB(65, 0, 0, 0),
               child: GestureDetector(
                 onTap: null,
                 child: Container(
@@ -169,24 +156,21 @@ class Auto_UML_Generator extends StatelessWidget {
             ),
             const SizedBox(height: 55),
             Padding(
-              padding: const EdgeInsets.fromLTRB(60, 0, 0, 0),
+              padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
               child: GestureDetector(
                 onTap: null,
                 child: Container(
-                  width: MediaQuery.of(context).size.width*0.67,
-                  height: MediaQuery.of(context).size.width*0.11,
                   decoration: const BoxDecoration(
                       color: Color.fromARGB(255,172,89,71),
                       borderRadius: BorderRadius.all(Radius.circular(10))
                   ),
                   child: FlatButton(
-                    child: Text('Back', style: TextStyle(
+                    child: const Text('Back', style: TextStyle(
                         fontSize: 25,
                         fontFamily: 'Prociono',
                         fontWeight: FontWeight. bold,
                         color: Colors.black)),
-                    onPressed: (){ Navigator.pop(context);},
-                    color: Color.fromARGB(255,172,89,71),), ),
+                    onPressed: (){ Navigator.pushNamed(context, "/HomePage");},), ),
               ),
             ),
             const SizedBox(height: 20),

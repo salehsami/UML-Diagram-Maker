@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-import 'home.dart';
+import 'HomePage.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({ Key? key }) : super(key: key);
@@ -11,9 +11,9 @@ class LandingPage extends StatelessWidget {
   Widget build(BuildContext context) {
 
     Timer(
-      const Duration(seconds: 2),
+      const Duration(seconds: 10),
         () => Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context)
-         => HomePage()
+         => const HomePage()
         ))
     );
     return SafeArea(

@@ -11,7 +11,7 @@ class LandingPage extends StatelessWidget {
   Widget build(BuildContext context) {
 
     Timer(
-      const Duration(seconds: 5),
+      const Duration(seconds: 3),
         () => Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context)
          => const HomePage()
         ))

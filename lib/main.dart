@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:uml_maker/AutoUMLGenerator.dart';
 import 'package:uml_maker/HomePage.dart';
 
-import 'Landing_Page.dart';
+import 'LandingPage.dart';
 import 'Profile.dart';
 import 'ChangeType.dart';
 import 'AddRequirements.dart';

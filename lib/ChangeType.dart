@@ -5,23 +5,21 @@ class ChangeType extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+    return Scaffold(
+        body: Stack(
           children: [
             Container(
-              decoration: const BoxDecoration(
-                image: DecorationImage(image: AssetImage("assets/images/ChangeType.png"),),
+              decoration: BoxDecoration(
+                image: DecorationImage(image: AssetImage("assets/images/ChangeType.png"), fit: BoxFit.cover,),
               ),
             ),
-            const SizedBox(height: 600),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(60, 0, 0, 0),
-              child: GestureDetector(
-                onTap: null,
+            Positioned(
+                left: MediaQuery.of(context).size.width/100+0.5,
+                top: MediaQuery.of(context).size.height/1.10,
                 child: Container(
-                  decoration: const BoxDecoration(
+                  width: 104,
+                  height: 40,
+                  decoration: BoxDecoration(
                       color: Color.fromARGB(255,172,89,71),
                       borderRadius: BorderRadius.all(Radius.circular(10))
                   ),
@@ -31,12 +29,12 @@ class ChangeType extends StatelessWidget {
                         fontFamily: 'Prociono',
                         fontWeight: FontWeight. bold,
                         color: Colors.black)),
-                    onPressed: (){ Navigator.pushNamed(context, "/AutoUMLGenerator");},), ),
-              ),
+                    onPressed: (){ Navigator.pushNamed(context, "/AutoUMLGenerator");},),
+                )
             ),
+
           ],
-        ),
-      ),
+        )
     );
   }
 }

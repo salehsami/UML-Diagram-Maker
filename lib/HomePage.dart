@@ -11,6 +11,11 @@ class HomePage extends StatelessWidget {
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Container(
+              decoration: const BoxDecoration(
+                image: DecorationImage(image: AssetImage("assets/images/main_scr.png"), fit: BoxFit.cover,),
+              ),
+            ),
             Image.asset("assets/images/UML_main.png"),
 
             const SizedBox(height: 30),
@@ -44,8 +49,8 @@ class HomePage extends StatelessWidget {
                       color: Color.fromARGB(255,172,89,71),
                       borderRadius: BorderRadius.all(Radius.circular(10))
                   ),
-                  child: FlatButton(
-                    child: const Text('UML Identifier', style: TextStyle(
+                  child: const FlatButton(
+                    child: Text('UML Identifier', style: TextStyle(
                         fontSize: 25,
                         fontFamily: 'Prociono',
                         fontWeight: FontWeight. bold,
@@ -63,8 +68,8 @@ class HomePage extends StatelessWidget {
                       color: Color.fromARGB(255,172,89,71),
                       borderRadius: BorderRadius.all(Radius.circular(10))
                   ),
-                  child: FlatButton(
-                    child: const Text('Picture To UML', style: TextStyle(
+                  child: const FlatButton(
+                    child: Text('Picture To UML', style: TextStyle(
                         fontSize: 25,
                         fontFamily: 'Prociono',
                         fontWeight: FontWeight. bold,
@@ -75,7 +80,7 @@ class HomePage extends StatelessWidget {
             const SizedBox(height: 20),
             Image.asset("assets/images/UML_main.png"),
 
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.fromLTRB(130, 0, 0, 0),
               child: GestureDetector(
@@ -85,8 +90,8 @@ class HomePage extends StatelessWidget {
                       color: Color.fromARGB(255,172,89,71),
                       borderRadius: BorderRadius.all(Radius.circular(10))
                   ),
-                  child: FlatButton(
-                    child: const Text('UML Types', style: TextStyle(
+                  child: const FlatButton(
+                    child: Text('UML Types', style: TextStyle(
                         fontSize: 25,
                         fontFamily: 'Prociono',
                         fontWeight: FontWeight. bold,
@@ -104,8 +109,8 @@ class HomePage extends StatelessWidget {
                       color: Color.fromARGB(255,172,89,71),
                       borderRadius: BorderRadius.all(Radius.circular(10))
                   ),
-                  child: FlatButton(
-                    child: const Text('Diagram Editor', style: TextStyle(
+                  child: const FlatButton(
+                    child: Text('Diagram Editor', style: TextStyle(
                         fontSize: 25,
                         fontFamily: 'Prociono',
                         fontWeight: FontWeight. bold,
@@ -123,8 +128,8 @@ class HomePage extends StatelessWidget {
                       color: Color.fromARGB(255,172,89,71),
                       borderRadius: BorderRadius.all(Radius.circular(10))
                   ),
-                  child: FlatButton(
-                    child: const Text('Communication', style: TextStyle(
+                  child: const FlatButton(
+                    child: Text('Communication', style: TextStyle(
                         fontSize: 25,
                         fontFamily: 'Prociono',
                         fontWeight: FontWeight. bold,

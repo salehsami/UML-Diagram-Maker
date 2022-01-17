@@ -1,4 +1,4 @@
-# Uml_Maker
+# Uml_Diagram_Maker
 
 A new Flutter project.
 Purpose of the software is to create a Unified Modeling Language diagram maker and make it easier for users to generate it. The main problem is that it is difficult to convert actors into a UML diagram and it is to perceive the complex data otherwise. This system will use python for an inexpensive solution through machine language, ensuring that data is accurate, and operations are reliable. This system consists of a mobile application and a web application that will perform operations and store data on the cloud.
